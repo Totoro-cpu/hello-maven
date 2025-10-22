@@ -6,6 +6,9 @@ public class Book {
     String author;
     double price;
 
+    public Book() {
+    }
+
     public Book(String id, String title, String author, double price) {
         this.id = id;
         this.title = title;
@@ -45,13 +48,4 @@ public class Book {
         this.title = title;
     }
 
-    @Override
-    public String toString() {
-        return "Book{" +
-                "id='" + id + '\'' +
-                ", title='" + title + '\'' +
-                ", author='" + author + '\'' +
-                ", price=" + price +
-                '}';
-    }
 }
